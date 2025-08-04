@@ -1,0 +1,11 @@
+site_name: Internship Docs
+
+nav:
+  - Home: index.md
+  - Objectives: objectives.md
+  - Labs:
+      - WPScan: Lab1.md
+      - Emulator Testing: Lab3.md
+  - Tests: Tests.md
+  - Analysis: findings.md
+  - References: references.md
