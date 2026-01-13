@@ -57,6 +57,12 @@ Compare basic connectivity and latency between Docker containers and VMs.
 * Docker faster due to more efficient networking and no GUI overhead.
 * VM scan slightly slower but more flexible in terms of interactive debugging.
 
+```md
+| Test        | Docker | Virtual Machine |
+|------------|--------|-----------------|
+| Ping (avg) | 2 ms   | 7 ms            |
+| RAM usage  | ~300MB | ~2GB            |
+
 ---
 
 ## 🧪 Test 3: Android Studio & Emulator
@@ -96,13 +102,3 @@ Explore feasibility of running Android Studio inside Docker or VM.
 | WPScan         | ✅ Faster, low RAM | 🟡 Slower, more RAM |
 | Android Studio | ❌ Not reliable    | ✅ Best option       |
 | Web Emulator   | ✅ Can be reliable | ❌ Not working      |
-
----
-
-## 📁 Add to MkDocs
-
-```yaml
-nav:
-  - Lab Activities:
-      - Docker vs VM Tests: docker-vm-tests.md
-```
