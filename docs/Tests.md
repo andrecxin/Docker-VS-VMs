@@ -57,13 +57,10 @@ Compare basic connectivity and latency between Docker containers and VMs.
 * Docker faster due to more efficient networking and no GUI overhead.
 * VM scan slightly slower but more flexible in terms of interactive debugging.
 
-```md
 | Test        | Docker | Virtual Machine |
 |------------|--------|-----------------|
 | Ping (avg) | 2 ms   | 7 ms            |
 | RAM usage  | ~300MB | ~2GB            |
-
----
 
 ## 🧪 Test 3: Android Studio & Emulator
 
