@@ -56,8 +56,6 @@ Install the target APK onto the running emulator.
 **Command**
 adb install /mnt/c/Users/andre/Downloads/InsecureBankv2.apk
 
-```bash
-
 7. Notes
 ❌ This image does not include Google Play Services
 
