@@ -108,15 +108,3 @@ Additional tips:
 * Automate vulnerable plugin/theme installation.
 * Include sample `mkdocs.yml` entry to link this `.md` file.
 
----
-
-## 🧷 MkDocs Snippet Example
-
-Add this file to your `mkdocs.yml`:
-
-```yaml
-nav:
-  - WPScan Lab:
-      - Configuration: wpscan-lab.md
-```
-
