@@ -19,12 +19,12 @@ The core aim of this internship is to evaluate the **performance**, **flexibilit
 
 Containers like Docker provide several benefits over VMs, especially in lab environments:
 
-✅ **Lightweight** – No full OS per container  
-✅ **Fast startup** – Launch in seconds  
-✅ **Low resource usage** – Less RAM and disk used  
-✅ **Portable & reproducible** – Share labs as Docker images  
-✅ **Easier networking** – Simulate networks using virtual bridges  
-✅ **Better for automation** – Great with CI/CD or scripting
+✅ **Lightweight** - No full OS per container  
+✅ **Fast startup** - Launch in seconds  
+✅ **Low resource usage** - Less RAM and disk used  
+✅ **Portable & reproducible** - Share labs as Docker images  
+✅ **Easier networking** - Simulate networks using virtual bridges  
+✅ **Better for automation** - Great with CI/CD or scripting
 
 ---
 
