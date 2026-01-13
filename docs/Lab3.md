@@ -18,7 +18,6 @@ This lab documents the process of running an Android emulator inside a Docker co
 ## 2. Check KVM Support
 Run the following command to verify that KVM acceleration is available on the host system.
 
-**Command**
 ```bash
 kvm-ok
 
@@ -56,6 +55,8 @@ localhost:5555    device
 Install the target APK onto the running emulator.
 **Command**
 adb install /mnt/c/Users/andre/Downloads/InsecureBankv2.apk
+
+```bash
 
 7. Notes
 ❌ This image does not include Google Play Services
