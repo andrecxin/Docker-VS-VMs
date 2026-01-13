@@ -154,8 +154,9 @@
 <li>WordPress site deployed via Docker Compose</li>
 <li>Scanned using:</li>
 </ul>
-<p><code>bash
-  docker run -it --rm --network="bridge" wpscanteam/wpscan --url http://host.docker.internal:8080</code></p>
+<p>```bash</p>
+<p>docker run -it --rm --network="bridge" wpscanteam/wpscan --url http://host.docker.internal:8080</p>
+<p>```</p>
 <h3 id="docker_1">Docker</h3>
 <ul>
 <li>Average scan time: 2.5 seconds</li>
@@ -172,11 +173,27 @@
 <li>Docker faster due to more efficient networking and no GUI overhead.</li>
 <li>VM scan slightly slower but more flexible in terms of interactive debugging.</li>
 </ul>
-<p>```md
-| Test        | Docker | Virtual Machine |
-|------------|--------|-----------------|
-| Ping (avg) | 2 ms   | 7 ms            |
-| RAM usage  | ~300MB | ~2GB            |</p>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Docker</th>
+<th>Virtual Machine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ping (avg)</td>
+<td>2 ms</td>
+<td>7 ms</td>
+</tr>
+<tr>
+<td>RAM usage</td>
+<td>~300MB</td>
+<td>~2GB</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="test-3-android-studio-emulator">🧪 Test 3: Android Studio &amp; Emulator</h2>
 <h3 id="objective_1">Objective</h3>
