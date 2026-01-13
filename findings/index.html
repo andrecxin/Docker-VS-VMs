@@ -100,6 +100,18 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#comparison-docker-vs-vms" class="nav-link">Comparison: Docker vs VMs</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#performance" class="nav-link">Performance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#isolation-security" class="nav-link">Isolation &amp; Security</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#use-cases" class="nav-link">Use Cases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -145,6 +157,12 @@
 </tbody>
 </table>
 <p><img alt="Ping RTT Comparison" src="../ping_rtt_vm_vs_docker.png" /></p>
+<h2 id="performance">Performance</h2>
+<p>Docker containers started faster and consumed fewer resources due to shared host kernels.</p>
+<h2 id="isolation-security">Isolation &amp; Security</h2>
+<p>Virtual machines provided stronger isolation, making them more suitable for untrusted workloads.</p>
+<h2 id="use-cases">Use Cases</h2>
+<p>Docker is ideal for CI pipelines and testing labs, while VMs suit legacy systems and full OS requirements.</p>
 <p><strong>Conclusion:</strong> Docker is lighter and faster for quick testing. VMs are better for full OS experience.</p></div>
             </div>
         </div>

@@ -132,54 +132,47 @@
 </ul>
 <hr />
 <h2 id="2-check-kvm-support">2. Check KVM Support</h2>
-<p>```bash
-kvm-ok</p>
-<p>Expected output:
-perl
-Copy
-Edit
-INFO: /dev/kvm exists<br />
-KVM acceleration can be used</p>
-<ol>
-<li>Run Docker Android Emulator
-bash
-Copy
-Edit
+<p>Run the following command to verify that KVM acceleration is available on the host system.</p>
+<pre><code class="language-bash">
+kvm-ok
+
+- Expected output:
+INFO: /dev/kvm exists
+KVM acceleration can be used
+
+3. Run Docker Android Emulator
+**Command**
 docker run -d \
   -p 6080:6080 \
   -p 5555:5555 \
-  -e EMULATOR_DEVICE="Samsung Galaxy S10" \
+  -e EMULATOR_DEVICE=&quot;Samsung Galaxy S10&quot; \
   -e WEB_VNC=true \
   --device /dev/kvm \
   --name android-container \
-  budtmo/docker-android:emulator_11.0</li>
-</ol>
-<p>6080: Web VNC access via browser</p>
-<p>5555: ADB access port</p>
-<p>Access the emulator in your browser: http://localhost:6080</p>
-<ol>
-<li>Connect ADB
-bash
-Copy
-Edit
+  budtmo/docker-android:emulator_11.0
+
+**Ports**
+6080 – Web VNC access via browser
+5555 – ADB access port
+
+Access the emulator in your browser at:
+http://localhost:6080
+
+4. Connect ADB
 adb connect localhost:5555
 adb devices
-Expected output:</li>
-</ol>
-<p>arduino
-Copy
-Edit
-List of devices attached<br />
-localhost:5555  device</p>
-<ol>
-<li>Install APK for Testing
-Example (path based on Windows):</li>
-</ol>
-<p>bash
-Copy
-Edit
+
+- Expected output
+List of devices attached
+localhost:5555    device
+
+5. Install APK for Testing
+Install the target APK onto the running emulator.
+**Command**
 adb install /mnt/c/Users/andre/Downloads/InsecureBankv2.apk
-Ensure the file path matches your actual APK location.</p>
+
+</code></pre>
+<hr />
 <ol>
 <li>Notes
 ❌ This image does not include Google Play Services</li>

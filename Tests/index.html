@@ -116,10 +116,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#add-to-mkdocs" class="nav-link">📁 Add to MkDocs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -176,6 +172,11 @@
 <li>Docker faster due to more efficient networking and no GUI overhead.</li>
 <li>VM scan slightly slower but more flexible in terms of interactive debugging.</li>
 </ul>
+<p>```md
+| Test        | Docker | Virtual Machine |
+|------------|--------|-----------------|
+| Ping (avg) | 2 ms   | 7 ms            |
+| RAM usage  | ~300MB | ~2GB            |</p>
 <hr />
 <h2 id="test-3-android-studio-emulator">🧪 Test 3: Android Studio &amp; Emulator</h2>
 <h3 id="objective_1">Objective</h3>
@@ -236,13 +237,7 @@
 <td>❌ Not working</td>
 </tr>
 </tbody>
-</table>
-<hr />
-<h2 id="add-to-mkdocs">📁 Add to MkDocs</h2>
-<pre><code class="language-yaml">nav:
-  - Lab Activities:
-      - Docker vs VM Tests: docker-vm-tests.md
-</code></pre></div>
+</table></div>
             </div>
         </div>
 
